@@ -6,6 +6,8 @@ import {CharacterInfo} from "./pages/CharacterInfo"
 import {Login} from "./pages/Login"
 import {SignUp} from "./pages/SignUp"
 import { About } from "./pages/About"
+import {EditUser} from "./pages/EditUser"
+import { ShowUsers } from "./pages/ShowUsers"
 import Footer from "./components/Footer"
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
@@ -28,6 +30,8 @@ function App() {
           <Route path="/characters/:characterId" element = {<CharacterInfo/>}/>
           <Route path="/login" element = {<Login/>}/>
           <Route path="/signup" element = {<SignUp/>}/>
+          <Route path="/show-users" element = {<ShowUsers/>}/>
+          <Route path="/edit/:userId" element = {<EditUser/>}/>
         </Routes>
 
         <Footer/>
